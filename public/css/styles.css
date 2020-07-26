@@ -2,38 +2,32 @@ body {
   margin: 0;
   font-family: 'Bebas Neue', cursive;
   /* font-family: 'Acme', sans-serif;
-  font-family: 'Bebas Neue', cursive;
   font-family: 'Noto Sans TC', sans-serif; */
 }
 
 a {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Noto Sans TC', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 h1 {
-  font-size: 9rem;
   font-family: 'Bebas Neue', cursive;
   text-align: center;
-
 }
 
 h2 {
-  font-size: 7rem;
+  font-size: 3rem;
   font-family: 'Bebas Neue', cursive;
   text-align: center;
-  color: #f1ebbb;
 }
 
 p {
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 5rem;
   color: #faeee7;
-}
-
-li {
-  font-family: 'Acme', cursive;
-  font-size: 5rem;
 }
 
 .navbar-brand {
@@ -45,13 +39,10 @@ li {
 .nav-link {
   color: blue;
 }
-
-.list-group{
-  margin-bottom: 10%;
 }
+
 .navbar {
   background-color: #b5076b;
-
 }
 
 .container-fluid {
@@ -59,44 +50,64 @@ li {
 }
 
 .first-container {
-  /* background-color: #a2de96; */
-  /* background-color: #5a3d55; */
-  padding: 12% 15% 20% 15%;
+  padding: 9% 15% 9% 15%;
   text-align: center;
   background-image: linear-gradient(#00005c, #6a097d);
+  margin-top: 0;
 }
 
-.titlename{
-  padding-bottom: 10%;
-  padding-top: 1%;
+.titlename {
   color: #f4f6ff;
-}
-.second-container {
-  background-image: linear-gradient(#b5076b, #f1ebbb);
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-}
-.scndtitle{
-  color: #f1ebbb;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  font-size: 7rem;
+  text-shadow: 2px 2px #00005c;
 }
 
+.second-container {
+  background-image: linear-gradient(#b5076b, #00005c);
+  text-align: center;
+  padding: 2.5% 10% 6% 10%;
+}
+
+ul{
+  /* margin-bottom: 10%; */
+}
 .devpicture {
   width: 50%;
   float: none;
-  margin-left: 5%;
-  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+  margin-bottom: 9%;
   border-radius: 100%;
 }
 
 .sub {
   text-align: center;
   line-height: 2;
-  font-size: 5rem;
+  font-size: 4rem;
   clear: right;
+  color: #f4f6ff;
+  text-shadow: 2px 2px #1b1c25;
+  font-family: 'Dancing Script', cursive;
+
+}
+
+.scndtitle {
+  color: #f4f6ff;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  font-size: 4.5rem;
+  text-shadow: 2px 2px #00005c;
+}
+
+li {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 3rem;
+  color: #f4f6ff;
+  text-shadow: 2px 2px #00005c;
+  padding: 1% 2% 1% 2%;
+  text-align: center;
 }
 
 .slide1 {
@@ -111,19 +122,16 @@ li {
 
 .slide3 {
   padding: 12% 15% 20% 15%;
-  background-image: linear-gradient(#f1ebbb, #5c2a9d );
+  background-image: linear-gradient(#f1ebbb, #5c2a9d);
 }
-
 
 .last-container {
-  background-image: linear-gradient( #5c2a9d, #f1ebbb);
-  padding: 7% 10% 7% 10%;
+  background-image: linear-gradient(#5c2a9d, #f1ebbb);
+  padding: 9% 10% 9% 10%;
   text-align: center;
-
-
 }
 
-.contact-btn{
+.contact-btn {
   width: 50%;
   text-align: center;
   background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
@@ -135,20 +143,29 @@ li {
   -moz-border-radius: 8;
   border-radius: 8px;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 30px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-margin-top: 12px;
-margin-left: auto;
-margin-right: auto;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
   display: inherit;
 }
 
-.copyright{
-font-size: 3rem;
-text-align: center;
-margin-top: 20%;
-color: #45046a;
+.contact-text{
+  font-size: 2rem;
+  font-family: 'Indie Flower', cursive;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 15%;
+  color: #45046a;
+}
+
+.footer-link{
+
 }
 
 .tooltip {
@@ -210,11 +227,21 @@ color: #45046a;
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
