@@ -24,8 +24,8 @@
 
   <!-- <nav class="navbar navbar-expand-lg navbar-dark">
 
-  <!-- <a class="navbar-brand" href="">PortafolioWeb</a> -->
-  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+    <a class="navbar-brand" href="">PortafolioWeb</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -63,81 +63,53 @@
       <li class="list-inline-item">Express.js</li>
       <li class="list-inline-item">jquery</li>
       <li class="list-inline-item">Heroku</li>
-
     </ul>
 
   </div>
   <section class="colored-section" id="slidetools">
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="2000" data-pause="hover" ; data-ride="carousel" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="4000" data-pause="hover" ; data-ride="carousel" data-ride="carousel">
       <div class="carousel-inner">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item slide1 active container-fluid">
-            <!-- <img class="d-block w-100 bstrapimage" src="" alt="First slide"> -->
-            <h2>I can design any web site for your business</h2>
+            <h2 class="slide-title"> I'm a web developer based in Santo Domingo</h2>
           </div>
+
           <div class="carousel-item slide2 container-fluid">
-
-            <h2> I'm a web developer based in Santo Domingo</h2>
-
+            <h2 class="slide-title">I can design any web site for your business</h2>
           </div>
-          <div class="carousel-item slide3 container-fluid">
-            <h2>I'm currently available for work!</h2>
-            <!-- <img class="d-block w-100" src="..." alt="Third slide"> -->
-          </div>
-        </div>
+
+          <!-- <div class="carousel-item slide3 container-fluid">
+            <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ajpNHkNN2t0" allowfullscreen></iframe>
+            </div>
+          </div> -->
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-      <section id="contact">
-        <div class="last-container container-fluid">
-          <p class="contact-text"> Do you wish to contact me?</p>
-          <a class="btn btn-success contact-btn" href="mailto:jairojimenez.opx.com"><i class="far fa-envelope"></i> Email me!</a>
-
-          <div class="tooltip">
-            <button onclick="myFunction()" onmouseout="outFunc()">
-              <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-              Copy text
-            </button>
-          </div>
-          <a class="footer-link" href="https://www.linkedin.com/in/jairo-jim%C3%A9nez-ozuna-23160489/"><i class="fab fa-linkedin"></i>LinkedIn</a>
-          <p class="copyright">© 2020 Jairo Jimenez @ All the rights reserved.</p>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </section>
+        <section id="contact">
+          <div class="last-container container-fluid">
+            <p class="contact-text"> Do you wish to contact me?</p>
+            <a class="btn btn-info" href="mailto:jairojimenez.opx.com"><i class="far fa-envelope"></i> Email me!</a>
 
-      <script>
-        // When the user clicks on div, open the popup
-        function myFunction() {
-          var popup = document.getElementById("myPopup");
-          popup.classList.toggle("show");
-        }
+            <a class="footer-link" href="https://www.linkedin.com/in/jairo-jim%C3%A9nez-ozuna-23160489/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            <p class="copyright">© 2020 Jairo Jimenez @ All the rights reserved.</p>
+          </div>
+        </section>
 
-        function myFunction() {
-          /* Get the text field */
-          var copyText = document.getElementById("myInput");
-
-          /* Select the text field */
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-          /* Copy the text inside the text field */
-          document.execCommand("copy");
-
-          /* Alert the copied text */
-          alert("Copied the text: " + copyText.value);
-        }
-      </script>
+        <script>
+        </script>
 
 </body>
 
