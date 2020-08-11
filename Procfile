@@ -1,1 +1,1 @@
-web : node life.js
+web: node life.js
