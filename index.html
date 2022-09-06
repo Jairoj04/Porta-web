@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <title>Jairo's portafolio</title>
 
-
+  <base href="/public">
+  <!-- bootstrap cdn -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 
   <!-- Google fonts -->
@@ -30,7 +31,6 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
@@ -70,24 +70,28 @@
   <section class="colored-section" id="slidetools">
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="4000" data-pause="hover" ; data-ride="carousel" data-ride="carousel">
       <div class="carousel-inner">
+
+
+
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
         </ol>
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
         <div class="carousel-inner">
           <div class="carousel-item slide1 active container-fluid">
             <div class="carousel-caption d-none d-md-block">
               <h2 class="slide-title"> I'm a web developer based in Santo Domingo</h2>
             </div>
-            <img class ="d-block w-100" src="https://i.ibb.co/HqDTC0p/20191228-075958.jpg" alt="">
+            <img class="d-block w-100" src="https://i.ibb.co/HqDTC0p/20191228-075958.jpg" alt="">
           </div>
 
           <div class="carousel-item slide2 container-fluid">
             <div class="carousel-caption d-none d-md-block">
               <h2 class="slide-title">I can design any web site for your business</h2>
             </div>
-            <img class ="d-block w-100" src="https://i.ibb.co/2WLrQ0Q/20200116-073236.jpg" alt="">
+            <img class="d-block w-100" src="https://i.ibb.co/2WLrQ0Q/20200116-073236.jpg" alt="">
           </div>
 
           <!-- <div class="carousel-item slide3 container-fluid">
@@ -111,11 +115,12 @@
       <a class="btn btn-info" href="mailto:jairojimenez.opx.com"><i class="far fa-envelope"></i> Email me!</a>
 
       <a class="footer-link" href="https://www.linkedin.com/in/jairo-jim%C3%A9nez-ozuna-23160489/"><i class="fab fa-linkedin"></i>LinkedIn</a>
-      <p class="copyright">© 2020 Jairo Jimenez @ All the rights reserved.</p>
+      <p class="copyright">© <span id="year">year</span> Jairo Jimenez @ All the rights reserved.</p>
     </div>
   </section>
 
   <script>
+    document.getElementById("year").innerHTML = (new Date().getFullYear());
   </script>
 
 </body>

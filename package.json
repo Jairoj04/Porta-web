@@ -5,9 +5,9 @@
   "main": "life.js",
   "dependencies": {
     "connect": "^3.7.0",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.4",
-    "serve-static": "^1.14.1"
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "serve-static": "^1.15.0"
   },
   "devDependencies": {},
   "scripts": {
